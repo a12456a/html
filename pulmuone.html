@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        header {
+            width: 1920px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        #login {
+            width: 1920px;
+            height: 30px;
+            background-color: #eee;
+            float: right;
+        }
+
+        #login>ul {
+            margin: 10px 375px 0 0px;
+            font-size: 12px;
+        }
+
+        #login>ul>li:last-child {
+            border-right: none;
+        }
+
+        #login>ul>li>a {
+            text-decoration: none;
+            float: right;
+            color: #666;
+            margin: 0 10px 0 0px;
+            padding: 0 10px 0 0px;
+            border-right: 1px solid #666;
+        }
+
+
+        #logo {
+            width: 175px;
+            height: 45px;
+            background-color: rgb(133, 38, 38);
+            float: left;
+            margin: 25px 0 0 375px;
+        }
+
+        #logo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #search {
+            width: 460px;
+            height: 50px;
+            float: left;
+            margin: 25px 0 0 20px;
+            border-radius: 20px;
+            border: 2px solid rgb(140, 216, 53);
+        }
+
+        #icon {
+            width: 210px;
+            height: 50px;
+            float: right;
+            margin: 25px 375px 0 0px;
+        }
+
+        #icon>img {
+            width: 50px;
+            height: 100%;
+            float: left;
+            margin: 0 10px;
+        }
+
+        nav {
+            width: 1170px;
+            height: 70px;
+            float: left;
+            margin: 20px 0 0 375px;
+        }
+
+        nav>ul {
+            margin: 10px 375px 0 0px;
+            font-size: 15px;
+            width: 1170px;
+            height: 30px;
+            padding: 0;
+        }
+
+        nav>ul>li:first-child {
+            font-size: 15px;
+            margin: 10px 0 0 0px;
+            font-weight: bold;
+        }
+
+        nav>ul>li>a {
+            text-decoration: none;
+            float: left;
+            color: #000;
+            margin: 10px 30px 0 0px;
+        }
+
+        nav>ul>li>a:hover {
+            color: #666;
+        }
+
+        #slider {
+            width: 1920px;
+            height: 465px;
+            margin: 0 auto;
+        }
+
+        #slider>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section {
+            width: 1920px;
+            height: 6600px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        section>#today {
+            width: 1170px;
+            height: 580px;
+            margin: 30px 0 60px 375px;
+            background-color: yellow;
+        }
+
+        section>#today>#t_title {
+            width: 1170px;
+            height: 50px;
+            margin: 0 0 10px 0px;
+            background-color: red;
+        }
+
+        section>#today>#t_title>h3 {
+            font-size: 28px;
+            margin: 20px 10px 0 20px;
+            float: left;
+            background-color: green;
+        }
+
+        #t_title>img {
+            width: 35px;
+            height: 35px;
+            margin: 25px 0 0 0px;
+            float: left;
+        }
+
+        section>#today>.today_p1 {
+            width: 560px;
+            height: 520px;
+            float: left;
+            background-color: #eee;
+            margin: 0 0px 0 10px;
+            border-radius: 20px;
+            overflow: hidden;
+
+        }
+
+        section>#today>.today_p1>img {
+            width: 100%;
+            height: 350px;
+        }
+
+        .p1_info>h5 {
+            font-size: 17px;
+            margin: 20px 0 10px 20px;
+        }
+
+        .p1_info>h5:before {
+            content: "[풀무원]";
+            color: #000;
+            margin: 0 5px;
+            font-size: 20px;
+        }
+
+        .p1_info>p {
+            font-size: 17px;
+            color: #a9a9a9;
+            margin: 10px 0 15px 25px;
+        }
+
+        .p1_info>span {
+            font-size: 25px;
+            color: #000;
+            margin: 0 0 0 25px;
+        }
+
+        .p1_info>#won {
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .p1_info>#won:after {
+            content: "28%";
+            color: tomato;
+            margin: 0 10px;
+            font-size: 25px;
+        }
+
+        .p1_info>#price {
+            font-size: 17px;
+            color: #a9a9a9;
+            margin: 0 0 0 5px;
+        }
+
+        section>#today>.today_p2 {
+            width: 560px;
+            height: 520px;
+            float: left;
+            background-color: #eee;
+            margin: 0 0px 0 30px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        section>#today>.today_p2>img {
+            width: 100%;
+            height: 350px;
+        }
+
+        .p2_info>h5 {
+            font-size: 17px;
+            margin: 20px 0 10px 20px;
+        }
+
+        .p2_info>h5:before {
+            content: "[ORGA]";
+            color: #000;
+            margin: 0 5px;
+            font-size: 20px;
+        }
+
+        .p2_info>p {
+            font-size: 17px;
+            color: #a9a9a9;
+            margin: 10px 0 15px 25px;
+        }
+
+        .p2_info>span {
+            font-size: 25px;
+            color: #000;
+            margin: 0 0 0 25px;
+        }
+
+        .p2_info>#won {
+            font-size: 17px;
+            margin: 0;
+        }
+
+        .p2_info>#won:after {
+            content: "28%";
+            color: tomato;
+            margin: 0 10px;
+            font-size: 25px;
+        }
+
+        .p2_info>#price {
+            font-size: 17px;
+            color: #a9a9a9;
+            margin: 0 0 0 5px;
+        }
+
+        section>#priemium {
+            width: 1170px;
+            height: 890px;
+            margin: 0 0 60px 375px;
+            background-color: rgb(248, 214, 18);
+        }
+
+        section>#free {
+            width: 1170px;
+            height: 285px;
+            margin: 0 0 60px 375px;
+        }
+
+        section>#free>h3 {
+            font-size: 28px;
+            margin: 0 10px 10px 20px;
+        }
+
+        section>#free>a>img {
+            width: 100%;
+            height: 250px;
+            float: left;
+            border-radius: 20px;
+        }
+
+        section>#best {
+            width: 100%;
+            height: 1100px;
+            background-color: orangered;
+            margin: 0 0 60px 0px;
+        }
+
+        section>#new {
+            width: 1170px;
+            height: 460px;
+            margin: 0 0 60px 375px;
+            background-color: darkgreen;
+        }
+
+        section>#pick {
+            width: 1170px;
+            height: 410px;
+            margin: 0 0 60px 375px;
+        }
+
+        #pick>h3 {
+            font-size: 28px;
+            margin: 0 10px 10px 20px;
+        }
+
+        #pick>.box {
+            width: 570px;
+            height: 320px;
+            background-color: yellow;
+            float: left;
+            margin: 0 0 0 10px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        #pick>.box>a>img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+
+        section>#recently {
+            width: 1170px;
+            height: 1000px;
+            margin: 0 0 60px 375px;
+            background-color: peachpuff;
+        }
+
+        section>#recently>h3 {
+            font-size: 28px;
+            margin: 0 10px 10px 20px;
+        }
+
+        #recently>ul {
+            margin: 20px 0 0 20px;
+            padding: 0;
+        }
+
+        #recently>ul>li>a {
+            font-size: 12px;
+            color: #000;
+            text-decoration: none;
+            float: left;
+            border: 1px solid #eee;
+            border-radius: 30px;
+            padding: 10px 15px;
+            margin: 0 5px 0 0px;
+
+        }
+
+        #recently>ul>li>a:hover {
+            background-color: green;
+            border: 1px solid green;
+        }
+
+        #recently>.side_left {
+            width: 270px;
+            height: 875px;
+            background-color: blue;
+            float: left;
+        }
+
+        section>#recently>.side_left>.recently_p1 {
+            width: 270px;
+            height: 420px;
+            background-color: red;
+            float: left;
+        }
+
+        section>#recently>.side_left>.recently_p2 {
+            width: 270px;
+            height: 420px;
+            background-color: orange;
+            float: left;
+        }
+
+        section>#recently>.recently_p3 {
+            width: 270px;
+            height: 420px;
+            background-color: yellow;
+            float: left;
+        }
+
+        #recently>.side_right {
+            width: 270px;
+            height: 875px;
+            background-color: purple;
+            float: left;
+        }
+
+        section>#recently>.side_right>.recently_p4 {
+            width: 270px;
+            height: 420px;
+            background-color: yellowgreen;
+            float: left;
+        }
+
+        section>#recently>.side_right>.recently_p5 {
+            width: 270px;
+            height: 420px;
+            background-color: blue;
+            float: left;
+        }
+
+
+
+        section>#brand {
+            width: 1170px;
+            height: 1270px;
+            margin: 0 0 60px 375px;
+            background-color: rgb(71, 69, 184);
+        }
+
+        footer {
+            width: 1920px;
+            height: 300px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+
+        #box {
+            width: 1170px;
+            height: 270px;
+            background-color: rgb(113, 113, 151);
+            margin: 10px auto;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="login">
+            <ul>
+                <li><a href="">배송안내</a></li>
+                <li><a href="">고객기쁨센터</a></li>
+                <li><a href="">회원가입</a></li>
+                <li><a href="">로그인</a></li>
+            </ul>
+        </div>
+        <div id="logo">
+            <img src="https://img.shopback.co.kr/iIeSwXRj4iU/rs:fit/w:1000/h:0/g:ce/el:1/q:75/bl:0/aHR0cHM6Ly9jbG91ZC5zaG9wYmFjay5jb20vdF9zZF8yNTBfcGFkL3N0b3JlLXNlcnZpY2Uta3IvYXNzZXRzLzE2ODA2LzYzMDAyMjEwLTAwZTQtMTFlZC1hYWMzLWY3MDk0ZDFkZTlmYi5wbmc.jpg"
+                alt="logo">
+        </div>
+        <div id="search"></div>
+        <div id="icon">
+            <img src="https://cdn0.iconfinder.com/data/icons/ui-kit-elements/16/User-256.png" alt="person">
+            <img src="https://cdn0.iconfinder.com/data/icons/shopping-and-ecommerce-30/32/Shopping_and_Ecommerce_delivery_truck_van-512.png"
+                alt="delivery">
+            <img src="https://cdn1.iconfinder.com/data/icons/iconoir-vol-1/24/bag-256.png" alt="bag">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">전체 카테고리</a></li>
+                <li><a href="">베스트</a></li>
+                <li><a href="">일일배송</a></li>
+                <li><a href="">매장배송</a></li>
+                <li><a href="">지금세일</a></li>
+                <li><a href="">신상품</a></li>
+                <li><a href="">기획전/이벤트</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="slider">
+        <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/07/13/0B79A4B3B6894EF6A96F.jpg" alt="slider">
+    </div>
+
+    <section>
+        <div id="today">
+            <div id="t_title">
+                <h3>오늘만, e가격</h3>
+                <img src="img/clock.png" alt="clock">
+            </div>
+            <div class="today_p1">
+                <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/07/19/B912442E0C1048E9A43B.jpg"
+                    alt="today_p1">
+                <div class="p1_info">
+                    <h5>[기획]동치미냉면2인+함흥비빔냉면2인 (1306g)</h5>
+                    <p>#씨앗유산균으로 맑은 감칠맛 #고구마전분으로 만든 함흥면</p>
+                    <span>6,980</span>
+                    <span id="won">원</span>
+                    <span id="price">9,000</span>
+                </div>
+            </div>
+            <div class="today_p2">
+                <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/07/19/C0F48B33C0A94A5A8B24.jpg"
+                    alt="today_p2">
+                <div class="p2_info">
+                    <h5>ORGA 잔가시까지 제거한 품질인증 국산 순살 삼치 (300g)</h5>
+                    <p>#가시 제거한 손질 삼치 #믿을 수 있는 국내산</p>
+                    <span>9,700</span>
+                    <span id="won">원</span>
+                    <span id="price">13,900</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="priemium">
+            <h3>priemium</h3>
+
+        </div>
+
+        <div id="free">
+            <h3>녹즙, 내 마음대로 주문 ></h3>
+            <a href="">
+                <img src="img/free.png" alt="free">
+            </a>
+        </div>
+
+        <div id="best">
+            <h3>잘나가요, 이 상품 ></h3>
+        </div>
+
+        <div id="new">
+            <h3>NEW, 제일 먼저 만나요 ></h3>
+            <div class="today_p"></div>
+            <div class="today_p"></div>
+            <div class="today_p"></div>
+        </div>
+
+        <div id="pick">
+            <h3>골라담아 ,묶음할인 ></h3>
+            <div class="box">
+                <a href="">
+                    <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/03/15/D5F1F6D0DAF94143A95F.jpg"
+                        alt="pick1"> </a>
+            </div>
+
+            <div class="box">
+                <a href="">
+                    <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/03/15/6CF6CE8A283745F1AFDF.jpg"
+                        alt="pick2"> </a>
+            </div>
+        </div>
+
+
+        <div id="recently">
+            <h3>요즘, 많이 찾는 상품 ></h3>
+            <ul>
+                <li><a href="">#제철과일</a></li>
+                <li><a href="">#풀무원 베스트</a></li>
+                <li><a href="">#무항생제 정육</a></li>
+                <li><a href="">#추천 녹즙</a></li>
+                <li><a href="">#가전 신제품 출시!</a></li>
+                <li><a href="">#풀무원 라면</a></li>
+            </ul>
+
+            <div id="r_main">
+                <div class="side_left">
+                    <div class="recently_p1">
+                        <img src="" alt="">
+                        <h3>풀무원</h3>
+                        <p>목초달걀 무항생제 1등급특란(15개) (900g)</p>
+                        <span>8,980</span>
+                        <span id="won">원</span>
+                    </div>
+                    <div class="recently_p2">
+                        <img src="" alt="">
+                        <h3>풀무원</h3>
+                        <p>얇은피꽉찬속 고기만두 (400gx2봉)</p>
+                        <span>8,980</span>
+                        <span id="won">원</span>
+                    </div>
+                </div>
+
+                <div class="recently_p3">
+                    <img src="" alt="">
+                    <h3>풀무원</h3>
+                    <p>식물성지구식단 LIKE 텐더 (400gx2개)</p>
+                    <span>12,960</span>
+                    <span id="won">원</span>
+                </div>
+
+                <div class="side_right">
+                    <div class="recently_p4">
+                        <img src="" alt="">
+                        <h3>풀무원</h3>
+                        <p>얇은피꽉찬속 김치만두 (400gx2봉)</p>
+                        <span>8,980</span>
+                        <span id="won">원</span>
+                    </div>
+                    <div class="recently_p5">
+                        <img src="" alt="">
+                        <h3>풀무원</h3>
+                        <p>노엣지 꽉찬토핑피자 파이브치즈 (376g)</p>
+                        <span>9,980</span>
+                        <span id="won">원</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="brand">
+            <h3>만나요, 풀무원 모든 브랜드 ></h3>
+        </div>
+    </section>
+
+    <footer>
+        <div id="box"></div>
+    </footer>
+</body>
+
+</html>
