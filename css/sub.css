@@ -4,13 +4,14 @@
 #preview > p {font-size:12px; display:block; text-align:right; color:#5c5c5c;}
 
 #p_img {width:570px; height:770px; float:left; margin:5px 0 0 0px;}
-#p_img > #big_img {width:535px; height:535px; border-radius:10px;  padding:0;  overflow:hidden; position:relative; background-image:url("../img/sub_preview1.jpg"); background-size:cover; }
-#big_img > .best {width:45px; height:30px; background-color:#ff752a; position:absolute; font-size:13px; color:#fff; text-align:center; border-radius:10px 0 10px 0px; padding:10px 0 0 0px;}
+#p_img > #big_img {width:535px; height:535px; border-radius:10px;  padding:0; overflow:hidden;}
+#p_img > #big_img > .preview_img {width:100%; height:100%; position:relative; float:left;}
+#p_img > #big_img > .best {width:45px; height:30px; background-color:#ff752a; position:absolute; font-size:13px; color:#fff; text-align:center; border-radius:10px 0 10px 0px; padding:10px 0 0 0px; float:left;}
 
 #imgbox {width:540px; height:125px; margin:20px 0px;}
 #imgbox > img {width:95px; height:95px; float:left; margin:15px 0 0 10px; border-radius:10px;}
 #imgbox > img:first-child {margin:15px 0 0 60px;}
-#imgbox > img:hover {opacity:0.9;}
+#imgbox > img:hover {opacity:0.9; cursor:pointer;}
 
 #review {width:540px; height:70px;  border-top:1px solid #f7f7f7; border-bottom:1px solid #f7f7f7;}
 #review > span {font-size:16px; font-weight:bold; float:left; margin:25px 70px 0 0px; }
@@ -22,7 +23,7 @@
 #top > img {width:20px; height:20px; float:left; margin:0 2px 0 0px;}
 #top > .icon {width:30px; height:30px; float:right; margin:0 0 0 15px;}
 #top > h6 {font-size:17px; float:left; font-weight:bold; width:450px; height:20px;}
-#top > h3 {font-size:23px; width:500px; height:30px;   float:left; margin:5px 0 0 0px; letter-spacing:-1px;}
+#top > h3 {font-size:23px; width:500px; height:30px;  float:left; margin:5px 0 0 0px; letter-spacing:-1px;}
 #top > p {font-size:18px; margin:15px 0 25px 0px;color:#5c5c5c; width:500px; height:20px; float:left;}
 #top > span {font-size:32px;}
 #top > #won {font-size:20px;}
@@ -65,7 +66,7 @@
 input {display:none;}
 label {float:left; width:230px; height:70px; position:relative;}
 label:first-child { margin:0 0 0 10px;}
-label > span {font-size:18px; position:absolute; margin:25px 0 0 75px; color:#635447; font-weight:bold; } 
+label > span {font-size:17px; position:absolute; margin:25px 0 0 75px; color:#635447; font-weight:bold; } 
 
 
 section {width:950px; height:4930px; margin:0 auto;}
@@ -73,32 +74,32 @@ section {width:950px; height:4930px; margin:0 auto;}
 .content1 > .logo {width:150px; height:80px; display:block;}
 .content1 > .img1 {width:950px; height:520px; display:block;}
 
-.content1 >.text1 > h2 {font-size:30px; text-align:center; letter-spacing:-1px; margin:70px 0 0 0px;}
-.content1 >.text1 > h1 {font-size:47px; text-align:center; margin:50px 0px; letter-spacing:-5px;}
-.content1 >.text1 > p {font-size:21px; line-height:30px; text-align:center; color:#323131; letter-spacing:-1px;}
+.content1 >.text1 > h2 {font-size:27px; text-align:center; letter-spacing:-1px; margin:70px 0 0 0px;}
+.content1 >.text1 > h1 {font-size:43px; text-align:center; margin:50px 0px; letter-spacing:-5px;}
+.content1 >.text1 > p {font-size:19px; line-height:30px; text-align:center; color:#323131; letter-spacing:-1px;}
 .content1 > #textbox {width:660px; height:660px; margin:80px 0 0 145px; }
 #textbox > .summary {width:330px; height:330px; float:left;}
 #textbox > .summary:first-child{border-right:1px solid #000; border-bottom:1px solid #000;}
 #textbox > .summary:nth-child(2){border-bottom:1px solid #000;}
 #textbox > .summary:nth-child(3){border-right:1px solid #000;}
 #textbox > .summary > img {width:150px; height:150px; margin:40px 0 0 90px;}
-#textbox > .summary > h4 {font-size:28px; text-align:center; font-weight:bold; margin:10px 0px;}
-#textbox > .summary > p {font-size: 22px; text-align:center; line-height: 30px;}
+#textbox > .summary > h4 {font-size:25px; text-align:center; font-weight:bold; margin:10px 0px;}
+#textbox > .summary > p {font-size: 20px; text-align:center; line-height: 30px;}
 
 #content2 {width:100%; height:1800px; border-bottom:1px solid #adadad;}
-#content2 > h3 {font-size:32px; margin:80px 0 0 10px; letter-spacing:-2px;}
+#content2 > h3 {font-size:29px; margin:80px 0 0 10px; letter-spacing:-2px;}
 #content2 > h3:before {content:""; background-color:#000; display:inline-block; width:10px; height:10px; border-radius:50px; margin:0 5px 0 0px; vertical-align: middle;}
 #content2 > img {width:950px; height:580px; margin:30px 0 0 0px;}
-#content2 > .sub_title{font-size:28px; margin:30px 0 0 40px; letter-spacing:-3px; color:#000;}
+#content2 > .sub_title{font-size:24px; margin:30px 0 0 40px; letter-spacing:-3px; color:#000;}
 #content2 > .sub_title:before {content:""; background-color:#000; display:inline-block; width:5px; height:5px; border-radius:50px; margin:0 5px 0 0px; vertical-align: middle;}
-#content2 > p {font-size:22px; margin:20px 0 0 50px; letter-spacing:-1px; line-height:35px; color:#323131;}
+#content2 > p {font-size:19px; margin:15px 0 0 50px; letter-spacing:-1px; line-height:30px; color:#323131;}
 
 #content3 {width:100%; height:970px; border-bottom:1px solid #adadad;}
-#content3 > h3 {font-size:32px; margin:80px 0 0 10px; letter-spacing:-2px;}
+#content3 > h3 {font-size:29px; margin:80px 0 0 10px; letter-spacing:-2px;}
 #content3 > h3:before {content:""; background-color:#000; display:inline-block; width:10px; height:10px; border-radius:50px; margin:0 5px 0 0px; vertical-align: middle;}
-#content3 > p {font-size:20px; margin:30px 0 80px 30px; letter-spacing:-2px; line-height:30px; width:900px; height:150px; color:#323131;}
+#content3 > p {font-size:19px; margin:30px 0 80px 30px; letter-spacing:-2px; line-height:30px; width:900px; height:150px; color:#323131;}
 #content3 > p:before {content:"-"; margin:0 5px 0 0px; }
-#content3 > h2 {font-size: 22px; letter-spacing:-2px; color:#323131;}
+#content3 > h2 {font-size: 20px; letter-spacing:-2px; color:#323131;}
 #content3 > img {width: 100%; height: 500px; margin:80px 0 0 0px;}
 
 #recommend {width:1170px; height:460px; margin:40px auto;}

@@ -241,6 +241,7 @@
          #best > #b_main> ul > li > a:hover {background-color:#004f18;}
 
          #b_p1 {width:230px; height:430px; float:left;}
+         #b_p1:hover {opacity:0.8; cursor: pointer;}
          #b_p1 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
       .b_img > .best {width:45px; height:45px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px; line-height: 16px;}
       .b_img > img {width:100%; height:100%;}
@@ -259,24 +260,33 @@
       .b_con >#star > span {color:#c2c2c2;}
 
 #b_p2 {width:230px; height:430px; float:left;}
+#b_p2:hover {opacity:0.8; cursor: pointer;}
 #b_p2 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p3 {width:230px; height:430px; float:left;}
+#b_p3:hover {opacity:0.8; cursor: pointer;}
 #b_p3 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p4 {width:230px; height:430px; float:left;}
+#b_p4:hover {opacity:0.8; cursor: pointer;}
 #b_p4 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p5 {width:230px; height:430px; float:left;}
+#b_p5:hover {opacity:0.8; cursor: pointer;}
 #b_p5 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p6 {width:230px; height:430px; float:left;}
+#b_p6:hover {opacity:0.8; cursor: pointer;}
 #b_p6 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p6 > .b_con > #price {opacity:0;}
 #b_p6 > .b_con> #won:after {display:none;}
 #b_p7 {width:230px; height:430px; float:left;}
+#b_p7:hover {opacity:0.8; cursor: pointer;}
 #b_p7 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p8 {width:230px; height:430px; float:left;}
+#b_p8:hover {opacity:0.8; cursor: pointer;}
 #b_p8 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p9 {width:230px; height:430px; float:left;}
+#b_p9:hover {opacity:0.8; cursor: pointer;}
 #b_p9 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p10 {width:230px; height:430px; float:left;}
+#b_p10:hover {opacity:0.8; cursor: pointer;}
 #b_p10 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 
       #new {width: 1170px; height: 460px; margin: 0 0 60px 375px;}
@@ -428,6 +438,7 @@
 
       #Brand_product{width:1170px; height:840px;}
       #B_p1 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
+      #B_p1:hover {opacity: 0.8; cursor: pointer;}
       #B_p1 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       .B_img > img {width:100%; height:100%;}
       .B_content {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
@@ -446,38 +457,47 @@
       .B_content >#star > span {color:#c2c2c2; }
 
       #B_p2 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
+      #B_p2:hover {opacity: 0.8; cursor: pointer;}
       #B_p2 > .B_img {width:210px; height:210px; float:left; border-radius:10px; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p2 > .B_content> #won:after {content:"30%"; color:#ff752a; font-size:20px; margin:0 0 0 10px;}
 
       #B_p3 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
+      #B_p3:hover {opacity: 0.8; cursor: pointer;}
       #B_p3 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p3 > .B_content > #price {opacity:0;}
 
       #B_p4 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
+      #B_p4:hover {opacity: 0.8; cursor: pointer;}
       #B_p4 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p4 > .B_content > #price {opacity:0;}
 
       #B_p5 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 10px 0 0px;}
+      #B_p5:hover {opacity: 0.8; cursor: pointer;}
       #B_p5 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p5 > .B_content > #price {opacity:0;}
 
       #B_p6 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
+      #B_p6:hover {opacity: 0.8; cursor: pointer;}
       #B_p6 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p6 > .B_content > #price {opacity:0;}
 
       #B_p7 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
+      #B_p7:hover {opacity: 0.8; cursor: pointer;}
       #B_p7 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p7 > .B_content > #price {opacity:0;}
 
       #B_p8 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
+      #B_p8:hover {opacity: 0.8; cursor: pointer;}
       #B_p8 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p8 > .B_content > #price {opacity:0;}
 
       #B_p9 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
+      #B_p9:hover {opacity: 0.8; cursor: pointer;}
       #B_p9 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p9 > .B_content > #price {opacity:0;}
 
       #B_p10 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 10px 0 0px;}
+      #B_p10:hover {opacity: 0.8; cursor: pointer;}
       #B_p10 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
       #B_p10 > .B_content > #price {opacity:0;}
 
