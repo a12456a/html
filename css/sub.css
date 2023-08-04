@@ -1,627 +1,142 @@
 @meta charset "utf-8";
-        
 
-        #slider {
-            width: 1920px;
-            height: 465px;
-            margin: 0 auto;
-        }
-
-        #slider>img {
-            width: 100%;
-            height: 100%;
-        }
-
-        section {
-            width: 1920px;
-            height: 6600px;
-            margin: 0 auto;
-        }
-
-        section>#today {
-            width: 1170px;
-            height: 580px;
-            margin: 30px 0 60px 375px;
-        }
-
-        section>#today>#t_title {
-            height: 40px;
-        }
-
-        section>#today>#t_title>h3 {
-            font-size: 28px;
-            margin:0 20px 0 20px;
-            float: left;
-        }
-
-        #t_title>img {
-            width: 25px;
-            height: 25px;
-            margin: 10px 0 0 0px;
-        }
-
-        section>#today>.today_p1 {
-            width: 560px;
-            height: 520px;
-            float: left;
-            background-color: #eee;
-            margin: 20px 0 0 10px;
-            border-radius: 20px;
-            overflow: hidden;
-
-        }
-
-        section>#today>.today_p1>img {
-            width: 100%;
-            height: 350px;
-        }
-
-        .p1_info>h5 {
-            font-size: 17px;
-            margin: 20px 0 10px 20px;
-        }
-
-        .p1_info>h5:before {
-            content: "[풀무원]";
-            color: #000;
-            margin: 0 5px;
-            font-size: 20px;
-        }
-
-        .p1_info>p {
-            font-size: 17px;
-            color: #a9a9a9;
-            margin: 10px 0 15px 25px;
-        }
-
-        .p1_info>span {
-            font-size: 25px;
-            color: #000;
-            margin: 0 0 0 25px;
-        }
-
-        .p1_info>#won {
-            font-size: 17px;
-            margin: 0;
-        }
-
-        .p1_info>#won:after {
-            content: "28%";
-            color: tomato;
-            margin: 0 10px;
-            font-size: 25px;
-        }
-
-        .p1_info>#price {
-            font-size: 17px;
-            color: #a9a9a9;
-            margin: 0 0 0 5px;
-        }
-
-        section>#today>.today_p2 {
-            width: 560px;
-            height: 520px;
-            float: left;
-            background-color: #eee;
-            margin: 20px 0 0 30px;
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        section>#today>.today_p2>img {
-            width: 100%;
-            height: 350px;
-        }
-
-        .p2_info>h5 {
-            font-size: 17px;
-            margin: 20px 0 10px 20px;
-        }
-
-        .p2_info>h5:before {
-            content: "[ORGA]";
-            color: #000;
-            margin: 0 5px;
-            font-size: 20px;
-        }
-
-        .p2_info>p {
-            font-size: 17px;
-            color: #a9a9a9;
-            margin: 10px 0 15px 25px;
-        }
-
-        .p2_info>span {
-            font-size: 25px;
-            color: #000;
-            margin: 0 0 0 25px;
-        }
-
-        .p2_info>#won {
-            font-size: 17px;
-            margin: 0;
-        }
-
-        .p2_info>#won:after {
-            content: "28%";
-            color: tomato;
-            margin: 0 10px;
-            font-size: 25px;
-        }
-
-        .p2_info>#price {
-            font-size: 17px;
-            color: #a9a9a9;
-            margin: 0 0 0 5px;
-        }
-
-        section>#priemium {width: 1170px; height: 890px; margin: 0 0 60px 375px; background-color:#204029; border-radius:20px;}
-      #P_title {width:340px; height:270px; float:left; margin:100px 0 0 110px;}
-      #P_title > #text {width:100%; height:100px; margin:10px 0 0 0px;}
-      #text> #top {font-size:35px; color:white;}
-      #text> h2 {font-size:35px; color:#f1f2ca;}
-      #go {width:200px; height:50px;}
-      #go > h5 {font-size:18px;  float:left; margin:10px 10px 0 0px; padding:0; color:#eee;}
-      #go > span {font-size:18px; width:30px; height:30px; background-color:#a38166; margin:5px 0 0 0px;float:left; text-align:center; border-radius:100px; color:#eee;}
-      
-      #mark {width:100%; height:50px; margin:60px 0 0 0px; }
-      #mark > h5 {font-size:15px; font-weight:bold; float:left; width:100px; height:20px; margin:0; padding:0; color:#eee;}
-      #mark > p {font-size:15px; float:left; width:100%; height:25px;  margin:0; padding:0; color:#eee;} 
-      
-      #P_slider > img {width:600px; height:270px; float:left; margin:100px 0 0 0px; border-radius:20px;}
-
-      #P_product  {width:950px; height:340px; float:left; margin:40px 0 0 110px;}
-      #P_p1 {width:220px; height:340px; float:left; border-radius:10px; margin:0 20px 0 0px;}
-      #P_p1 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
-      .P_img > img {width:100%; height:100%;}
-      .P_content {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
-      .P_content > p {font-size:16px; margin:0 0 10px 0px; padding:0; color:white; width:100%; height:50px; }
-      .P_content > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .P_content > span {font-size:20px; margin:10px 0 0 0px; color:white; }
-      .P_content > #won {font-size:14px; margin:0; color:white; }
-      #P_p1 > .P_content > #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .P_content > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .P_content > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #P_p2 {width:220px; height:340px; float:left; border-radius:10px; margin:0 20px 0 0px;}
-      #P_p2 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #P_p2 > .P_content > #won:after {content:"50%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-
-      #P_p3 {width:220px; height:340px; float:left; border-radius:10px; margin:0 20px 0 0px;}
-      #P_p3 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #P_p3 > .P_content > #won:after {content:"47%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-
-      #P_p4 {width:220px; height:340px; float:left; border-radius:10px; margin:0;}
-      #P_p4 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #P_p4 > .P_content > #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      
-      #more_button1 {border:1px solid #eee; font-size:20px; width:270px; height:40px; float:left; margin:40px 0 0 450px; text-align:center; border-radius:50px; padding:5px 0 0 0px; color:white;}
-        
-
-
-        section>#free {
-            width: 1170px;
-            height: 285px;
-            margin: 0 0 60px 375px;
-        }
-
-        section>#free>h3 {
-            font-size: 28px;
-            margin: 0 10px 10px 20px;
-        }
-
-        section>#free>a>img {
-            width: 100%;
-            height: 250px;
-            float: left;
-            border-radius: 20px;
-        }
-
-        section>#best {
-            width: 1920px;
-            height: 1100px;
-            background-color: #fafafa;
-            margin: 0 0 60px 0px;
-        }
-         #best > #b_main {width:1170px; height:1020px; float:left; margin:40px 0 0 375px;}
-         #best > #b_main> h3 {font-size: 28px; margin: 0 10px 10px 10px;}
-         #best > #b_main>ul {margin:0px; padding:0 0 0 10px;}
-         #best > #b_main> ul > li > a {text-decoration:none; color:#000; float:left; text-align:center; background-color:white; padding:10px 15px; border-radius:10px; margin:0 10px 10px 0px; font-size:14px; border:1px solid #eee;}
-         #best > #b_main> ul > li > a:hover {background-color:#004f18;}
-
-         #b_p1 {width:230px; height:430px; float:left;}
-         #b_p1 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-      .b_c1 {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
-      .b_c1 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c1 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c1 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c1 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c1 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c1 > #won {font-size:14px; margin:0;}
-      .b_c1> #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c1 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c1 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-      #star {width:200px; height:20px; float:left; margin:5px 0 0 0px;}
-      #star > img {width:15px; height:20px; float:left;}
-      #star > span {color:#c2c2c2;}
-
-      #b_p2 {width:230px; height:430px; float:left;}
-
-      #b_p2 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 15px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c2 {width:205px; height:160px; float:left; margin:10px 0 0 15px;}
-      .b_c2 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c2 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c2 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c2 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c2 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c2 > #won {font-size:14px; margin:0;}
-      .b_c2 > #won:after {content:"50%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c2 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c2 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p3 {width:230px; height:430px; float:left;}
-
-      #b_p3 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 20px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c3 {width:205px; height:160px; float:left; margin:10px 0 0 20px;}
-      .b_c3 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c3 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c3 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c3 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c3 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c3 > #won {font-size:14px; margin:0;}
-      .b_c3> #won:after {content:"32%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c3 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c3 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p4 {width:230px; height:430px; float:left;}
-
-      #b_p4 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 20px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c4 {width:205px; height:160px; float:left; margin:10px 0 0 20px;}
-      .b_c4 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c4 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c4 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c4 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c4 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c4 > #won {font-size:14px; margin:0;}
-      .b_c4> #won:after {content:"47%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c4 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c4 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p5 {width:230px; height:430px; float:left;}
-
-      #b_p5 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 20px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c5 {width:205px; height:160px; float:left; margin:10px 0 0 20px;}
-      .b_c5 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c5 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c5 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c5 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c5 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c5 > #won {font-size:14px; margin:0;}
-      .b_c5> #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c5 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c5 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-      
-      #b_p6 {width:230px; height:430px; float:left;}
-
-      #b_p6 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c6 {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
-      .b_c6 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c6 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c6 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c6 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c6 > #price {opacity:0;}
-      .b_c6 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c6 > #won {font-size:14px; margin:0;}
-      .b_c6 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c6 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p7 {width:230px; height:430px; float:left;}
-
-      #b_p7 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 15px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c7 {width:205px; height:160px; float:left; margin:10px 0 0 15px;}
-      .b_c7 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c7 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c7 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c7 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c7 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c7 > #won {font-size:14px; margin:0;}
-      .b_c7 > #won:after {content:"28%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c7 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c7 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p8 {width:230px; height:430px; float:left;}
-
-      #b_p8 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 20px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c8 {width:205px; height:160px; float:left; margin:10px 0 0 20px;}
-      .b_c8 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c8 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c8 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c8 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c8 > #price {opacity:0;}
-      .b_c8 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c8 > #won {font-size:14px; margin:0;}
-      .b_c8 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c8 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p9 {width:230px; height:430px; float:left;}
-
-      #b_p9 > .b_img {width:210px; height:210px;position:relative; float:left; border-radius:10px; margin:15px 0 0 20px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c9 {width:205px; height:160px; float:left; margin:10px 0 0 20px;}
-      .b_c9 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c9 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c9 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c9 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c9 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c9 > #won {font-size:14px; margin:0;}
-      .b_c9 > #won:after {content:"19%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c9 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c9 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #b_p10 {width:230px; height:430px; float:left;}
-
-      #b_p10 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 20px; overflow:hidden;}
-      .b_img > .best {width:50px; height:50px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px;}
-      .b_img > img {width:100%; height:100%;}
-
-      .b_c10 {width:205px; height:160px; float:left; margin:10px 0 0 20px;}
-      .b_c10 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_c10 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
-      .b_c10 > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .b_c10 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .b_c10 > span {font-size:20px; margin:10px 0 0 0px;}
-      .b_c10 > #won {font-size:14px; margin:0;}
-      .b_c10 > #won:after {content:"47%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .b_c10 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .b_c10 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-        #new {width: 1170px; height: 460px; margin: 0 0 60px 375px;}
-      #new>h3 {font-size: 28px; margin: 0 10px 10px 20px;}
-      .n_p1 {width:370px; height:370px; float:left; margin:0 30px 0 0px;}
-      .n_p1 > img {width:100%; height:230px; border-radius:20px;}
-      .n_p1 > .n_img {width:135px; height:135px; position:relative;  overflow:hidden; float:left;}
-      .n_p1 > .n_img > .best {width:45px; height:25px; background-color:#ff752a; position:absolute; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white;}
-      .n_p1 > .n_img > img {width:100%; height:100%;}
-
-      .n_c1 > h3 {font-size:16px; font-weight:bold; margin:0 0 0 20px; padding:0 0 5px 0px; }
-      .n_c1 > p {font-size:16px; margin:0 0 10px 10px; padding:0;  }
-      .n_c1 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 0 5px;}
-      .n_c1 > span {font-size:20px; margin:10px 0 0 0px;}
-      .n_c1 > #won {font-size:14px; margin:0 }
-      .n_c1 > #won:after {content:"5%"; color:#ff752a; font-size:20px;}
-      .n_c1 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .n_c1 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-
-      .n_p2 {width:370px; height:370px; float:left; margin:0 30px 0 0px;}
-      .n_p2 > img {width:100%; height:230px; border-radius:20px;}
-      .n_p2 > .n_img {width:135px; height:135px; position:relative;  overflow:hidden; float:left;}
-      .n_p2 > .n_img > .best {width:45px; height:25px; background-color:#ff752a; position:absolute; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white;}
-      .n_p2 > .n_img > img {width:100%; height:100%;}
-
-      .n_c2 > h3 {font-size:16px; font-weight:bold; margin:0 0 0 20px; padding:0 0 5px 0px; }
-      .n_c2 > p {font-size:16px; margin:0 0 10px 10px; padding:0;  }
-      .n_c2 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 0 5px;}
-      .n_c2 > span {font-size:20px; margin:10px 0 0 0px;}
-      .n_c2 > #won {font-size:14px; margin:0 }
-      .n_c2 > #won:after {content:"5%"; color:#ff752a; font-size:20px;}
-      .n_c2 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .n_c2 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      .n_p3 {width:370px; height:370px; float:left;}
-      .n_p3 > img {width:100%; height:230px; border-radius:20px;}
-      .n_p3 > .n_img {width:135px; height:135px; position:relative;  overflow:hidden; float:left;}
-      .n_p3 > .n_img > .best {width:45px; height:25px; background-color:#ff752a; position:absolute; border-radius:10px 0 10px 0px; text-align:center; font-weight:bold; color:white;}
-      .n_p3 > .n_img > img {width:100%; height:100%;}
-
-      .n_c3 > h3 {font-size:16px; font-weight:bold; margin:0 0 0 20px; padding:0 0 5px 0px; }
-      .n_c3 > p {font-size:16px; margin:0 0 10px 10px; padding:0;  }
-      .n_c3 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 0 5px;}
-      .n_c3 > span {font-size:20px; margin:10px 0 0 0px;}
-      .n_c3 > #won {font-size:14px; margin:0 }
-      .n_c3 > #won:after {content:"5%"; color:#ff752a; font-size:20px;}
-      .n_c3 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .n_c3 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-        
-
-      #pick {
-        width: 1170px;
-        height: 410px;
-        margin: 0 0 60px 375px;
-      }
-
-      #pick>h3 {
-        font-size: 28px;
-        margin: 0 10px 10px 20px;
-      }
-
-      #pick>.box {
-        width: 570px;
-        height: 320px;
-        float: left;
-        border-radius: 20px;
-        overflow: hidden;
-      }
-      #pick>.box:nth-of-type(1) {margin:0 30px 0 0px;}
-
-      #pick>.box>a>img {
-        width: 100%;
-        height: 100%;
-      }
-
-
-
-
-
-      #recently {width: 1170px; height: 1000px; margin: 0 0 60px 375px;}
-      #recently>h3 {font-size: 28px; margin: 0 10px 10px 20px;}
-      
-      #recently>ul {margin: 20px 0 0 20px; padding: 0; width:1170px; height:70px;}
-      #recently>ul>li>a {font-size: 12px;  color: #000; text-decoration: none; float: left; border: 1px solid #eee; border-radius: 30px;            padding: 10px 15px;  margin: 0 5px 0 0px; }
-      #recently>ul>li>a:hover {background-color: green; border: 1px solid green; }
-      
-      #r_main {width:1170px; height:875px;}
-      #r_main > .s_left {width:270px; height:875px; float:left; margin:0 30px 0 0px;}
-      #r_main > .s_left > .r_p1 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left; margin:0 0 30px 0px; border-radius:20px; overflow:hidden;}
-      .r_p1 > img {width:100%; height:270px;}
-      .r_p1 > h3 {font-size:16px; font-weight:bold; margin:10px 0 0 10px; padding:0; }
-      .r_p1 > p {font-size:15px; margin:0 0 30px 10px; padding:0;}
-      .r_p1 > span {font-size:20px; margin:20px 0 0 10px;}
-      .r_p1 > #won {font-size:14px; margin:0 }
-      .r_p1 > #won:after {content:"5%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .r_p1 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .r_p1 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #r_main > .s_left > .r_p2 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left;  border-radius:20px; overflow:hidden;}
-      .r_p2 > img {width:100%; height:270px;}
-      .r_p2 > h3 {font-size:16px; font-weight:bold; margin:10px 0 0 10px; padding:0;}
-      .r_p2 > p {font-size:15px; margin:0 0 30px 10px; padding:0;}
-      .r_p2 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2;}
-      .r_p2 > span {font-size:20px; margin:10px 0 0 10px;}
-      .r_p2 > #won {font-size:14px; margin:0 }
-      .r_p2 > #won:after {content:"5%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .r_p2 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .r_p2 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-
-      #r_main > .r_p3 {width:570px; height:870px;  border:1px solid #f7f7f7; background-color:#f7f7f7;  float:left;  margin:0 30px 0 0px; border-radius:20px; overflow:hidden;}
-      .r_p3 > img {width:100%; height:650px;}
-      .r_p3 > h3 {font-size:18px; font-weight:bold; margin:10px 0 0 20px; padding:0; }
-      .r_p3 > p {font-size:20px; margin:10px 0 50px 20px; padding:0;}
-      .r_p3 > #price {font-size:16px; display:block; text-decoration:line-through; color:#c2c2c2;}
-      .r_p3 > span {font-size:24px; margin:10px 0 0 20px;}
-      .r_p3 > #won {font-size:16px; margin:0 }
-      .r_p3 > #won:after {content:"18%"; color:#ff752a; font-size:24px; margin:0 0 0 5px;}
-      .r_p3 > .btn {width:40px; height:40px; float:right; background-color:#80c342; border-radius:100px; margin:0 30px 0 0px; }
-      .r_p3 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-
-      #r_main > .s_right {width:270px; height:875px;  float:left;}
-      #r_main > .s_right > .r_p4 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left; margin:0 0 30px 0px;  border-radius:20px; overflow:hidden;}
-      .r_p4 > img {width:100%; height:270px;}
-      .r_p4 > h3 {font-size:16px; font-weight:bold; margin:10px 0 0 10px; padding:0;}
-      .r_p4 > p {font-size:15px; margin:0 0 30px 10px; padding:0;}
-      .r_p4 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2;}
-      .r_p4 > span {font-size:20px; margin:10px 0 0 10px;}
-      .r_p4 > #won {font-size:14px; margin:0 }
-      .r_p4 > #won:after {content:"5%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .r_p4 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .r_p4 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #r_main > .s_right > .r_p5 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left;  border-radius:20px; overflow:hidden;}
-      .r_p5 > img {width:100%; height:270px;}
-      .r_p5 > h3 {font-size:16px; font-weight:bold; margin:10px 0 0 10px; padding:0;}
-      .r_p5 > p {font-size:15px; margin:0 0 30px 10px; padding:0;}
-      .r_p5 > span {font-size:20px; margin:20px 0 0 10px;}
-      .r_p5 > #won {font-size:14px; margin:0 }
-      .r_p5 > #won:after {content:"5%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .r_p5 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
-      .r_p5 > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-
-
-            section>#Brand {width: 1170px; height: 1320px; margin: 0 0 60px 375px;}
-            #Brand >h3 {font-size: 28px; margin: 0 10px 10px 20px;}
-      #b_list {width:1170px; height:75px;}
-      #button {width:40px; height:40px; background-color:#ffffff; border:1px solid #ebebeb; text-align:center; font-size:25px; padding:0 5px 0 0px; margin:15px 0 0 0px; float:left; border-radius:10px;}
-      .b_box {width:155px; height:75px; float:left;}
-      .b_box > img {width:100%; height:100%;}
-
-      #main_img {width:1170px; height:240px; margin:20px 0px; border-radius:20px;}
-
-      #Brand_product{width:1170px; height:840px;}
-      #B_p1 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
-      #B_p1 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      .B_img > img {width:100%; height:100%;}
-      .B_content {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
-      .B_content > img {width:20px; height:20px; margin:0px 10px 0 0px; float:left;}
-      .B_content > img {display:none;}
-      .B_content > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; margin:0; }
-      .B_content > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .B_content > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      #B_p1 > .B_content > #price {opacity:0;}
-      .B_content > span {font-size:20px; margin:10px 0 0 0px;}
-      .B_content > #won {font-size:14px; margin:0;}
-      .B_content > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .B_content > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-      #star {width:200px; height:20px; float:left; margin:5px 0 0 0px;}
-      #star > img {width:15px; height:20px; float:left;}
-      #star > span {color:#c2c2c2;}
-
-      #B_p2 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
-      #B_p2 > .B_img {width:210px; height:210px; float:left; border-radius:10px; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      .B_img > img {width:100%; height:100%;}
-      .B_content {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
-      .B_content > img {width:20px; height:20px; margin:0px 10px 0 0px; float:left;}
-      .B_content > img {display:none;}
-      .B_content > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; margin:0; }
-      .B_content > p {font-size:16px; margin:0 0 10px 0px; padding:0; width:100%; height:45px;}
-      .B_content > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
-      .B_content > span {font-size:20px; margin:10px 0 0 0px;}
-      .B_content > #won {font-size:14px; margin:0;}
-      #B_p2 > .B_content> #won:after {content:"30%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
-      .B_content > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px;}
-      .B_content > .btn > img {width:90%; height:90%; margin:2px 0 0 2px;}
-
-      #B_p3 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
-      #B_p3 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p3 > .B_content > #price {opacity:0;}
-
-      #B_p4 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 15px 0 0px;}
-      #B_p4 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p4 > .B_content > #price {opacity:0;}
-
-      #B_p5 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:0 10px 0 0px;}
-      #B_p5 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p5 > .B_content > #price {opacity:0;}
-
-      #B_p6 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
-      #B_p6 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p6 > .B_content > #price {opacity:0;}
-
-      #B_p7 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
-      #B_p7 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p7 > .B_content > #price {opacity:0;}
-
-      #B_p8 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
-      #B_p8 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p8 > .B_content > #price {opacity:0;}
-
-      #B_p9 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 15px 0 0px;}
-      #B_p9 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p9 > .B_content > #price {opacity:0;}
-
-      #B_p10 {width:220px; height:410px; float:left; background-color:#eee; border-radius:10px; margin:15px 10px 0 0px;}
-      #B_p10 > .B_img {width:210px; height:210px; float:left; margin:15px 5px 0 5px; overflow:hidden; border-radius:10px;}
-      #B_p10 > .B_content > #price {opacity:0;}
-
-      #more_button {width:180px; height:50px; border-radius:40px; border:1px solid #e2e2e2; text-align:center; padding:15px 0 0 0px; margin:20px 0 0 495px;}
-
-        
-    
+#preview {width:1170px; height:790px; margin:15px auto;}
+#preview > p {font-size:12px; display:block; text-align:right; color:#5c5c5c;}
+
+#p_img {width:570px; height:770px; float:left; margin:5px 0 0 0px;}
+#p_img > #big_img {width:535px; height:535px; border-radius:10px;  padding:0;  overflow:hidden; position:relative; background-image:url("../img/sub_preview1.jpg"); background-size:cover; }
+#big_img > .best {width:45px; height:30px; background-color:#ff752a; position:absolute; font-size:13px; color:#fff; text-align:center; border-radius:10px 0 10px 0px; padding:10px 0 0 0px;}
+
+#imgbox {width:540px; height:125px; margin:20px 0px;}
+#imgbox > img {width:95px; height:95px; float:left; margin:15px 0 0 10px; border-radius:10px;}
+#imgbox > img:first-child {margin:15px 0 0 60px;}
+#imgbox > img:hover {opacity:0.9;}
+
+#review {width:540px; height:70px;  border-top:1px solid #f7f7f7; border-bottom:1px solid #f7f7f7;}
+#review > span {font-size:16px; font-weight:bold; float:left; margin:25px 70px 0 0px; }
+#review > img {width:20px; height:20px; float:left; margin:20px 0 0 0px;}
+#review > img {opacity:0.7;}
+#review > p > a {font-size:14px; float:left; color:#adadad; margin:20px 0 0 10px;}
+
+#p_info {width:570px; height:760px;  float:left; margin:15px 0 0 30px; }
+#top > img {width:20px; height:20px; float:left; margin:0 2px 0 0px;}
+#top > .icon {width:30px; height:30px; float:right; margin:0 0 0 15px;}
+#top > h6 {font-size:17px; float:left; font-weight:bold; width:450px; height:20px;}
+#top > h3 {font-size:23px; width:500px; height:30px;   float:left; margin:5px 0 0 0px; letter-spacing:-1px;}
+#top > p {font-size:18px; margin:15px 0 25px 0px;color:#5c5c5c; width:500px; height:20px; float:left;}
+#top > span {font-size:32px;}
+#top > #won {font-size:20px;}
+
+#from {width:570px; height: 80px; margin:35px 0 0 0px; padding:0; border-top:1px solid #f7f7f7;}
+#from > h3 {font-weight:bold; font-size:24px; width:130px; height:40px; display:inline-block; margin:20px 0 0 0px;}
+#from > span {font-size:24px;}
+
+#from_middle {width:570px; height: 65px;  margin:0; padding:0; border-top:1px solid #f7f7f7;}
+#from_middle > h3 {font-weight:bold; font-size:16px; width:130px; height:25px;  display:inline-block; margin:20px 0 0 0px;}
+#from_middle > span {font-size:16px;}
+#from_middle > img {width:20px; height:20px; margin:10px 0 0 0px;}
+#from_middle > span:nth-of-type(3) {float:right; margin:20px 0 0 0px;}
+
+
+#from_middle_bottom {width:570px; height:105px;  margin:0; padding:0; border-top:1px solid #f7f7f7; border-bottom:1px solid #f7f7f7;}
+#from_middle_bottom > h3 {font-weight:bold; font-size:16px; width:130px; height:25px;  margin:40px 0 0px 0px; float:left;}
+#from_middle_bottom > img {width:65px; height:65px; float:left; margin:20px 5px 0 5px;}
+
+#price {width:570px; height:95px; background-color:#f7f7f7; margin:20px 0 0 0px; border-radius:10px;}
+#price > p {font-size:16px; margin:0 0 0 15px; padding:15px 0 0 0px;}  
+#price >#count {float:left; margin:15px 0 0 15px;}
+#price >#count > button {width:30px; height:30px; border-radius:100px; border:none; font-size:25px; padding:0 0 10px 0px; }
+#price >#count > span {font-size:16px; display:inline-block;}
+#price > span {float:right; font-size:22px; margin:20px 15px 0 0px; letter-spacing:1px;}
+#big_price {text-align:right; margin:20px 0 15px 0px;}
+#big_price > #total {font-size:16px; font-weight:bold;}
+#big_price > #total_price {font-size:34px; font-weight:bold; color:#ff752a;}
+#big_price > #won {font-size:20px; color:#ff752a;}
+
+#btn1> .present {width:180px; height:60px; border:1px solid #80c342; color:#80c342; border-radius:10px; font-size:20px; font-weight:bold; float:left; padding:0; margin:10px 7px 0 0px; background-color:#fff;}
+#btn1> .bag {width:190px; height:60px; border:1px solid #80c342; color:#80c342; border-radius:10px; font-size:20px; font-weight:bold; float:left; padding:0; margin:10px 8px 0 0px; background-color:#fff;}
+#btn1> .purchase {width:185px; height:60px; border:1px solid #80c342; color:#80c342; border-radius:10px; font-size:20px; float:left; font-weight:bold; padding:0; margin:10px 0 0 0px;}
+
+#btn1 > button:last-child {background-color:#80c342; color:#fff;}
+#btn1 > button > img {width:25px; height:25px; float:center; padding:0; } 
+
+#s_nav {width:1170px; height:70px;background-color:#fafafa; border-top:1px solid #d6d6d6; margin:75px auto; } 
+#s_nav > nav {margin:0; padding:0;}
+input {display:none;}
+label {float:left; width:230px; height:70px; position:relative;}
+label:first-child { margin:0 0 0 10px;}
+label > span {font-size:18px; position:absolute; margin:25px 0 0 75px; color:#635447; font-weight:bold; } 
+
+
+section {width:950px; height:4930px; margin:0 auto;}
+.content1 {width:100%; height:2000px; border-bottom:1px solid #adadad;}
+.content1 > .logo {width:150px; height:80px; display:block;}
+.content1 > .img1 {width:950px; height:520px; display:block;}
+
+.content1 >.text1 > h2 {font-size:30px; text-align:center; letter-spacing:-1px; margin:70px 0 0 0px;}
+.content1 >.text1 > h1 {font-size:47px; text-align:center; margin:50px 0px; letter-spacing:-5px;}
+.content1 >.text1 > p {font-size:21px; line-height:30px; text-align:center; color:#323131; letter-spacing:-1px;}
+.content1 > #textbox {width:660px; height:660px; margin:80px 0 0 145px; }
+#textbox > .summary {width:330px; height:330px; float:left;}
+#textbox > .summary:first-child{border-right:1px solid #000; border-bottom:1px solid #000;}
+#textbox > .summary:nth-child(2){border-bottom:1px solid #000;}
+#textbox > .summary:nth-child(3){border-right:1px solid #000;}
+#textbox > .summary > img {width:150px; height:150px; margin:40px 0 0 90px;}
+#textbox > .summary > h4 {font-size:28px; text-align:center; font-weight:bold; margin:10px 0px;}
+#textbox > .summary > p {font-size: 22px; text-align:center; line-height: 30px;}
+
+#content2 {width:100%; height:1800px; border-bottom:1px solid #adadad;}
+#content2 > h3 {font-size:32px; margin:80px 0 0 10px; letter-spacing:-2px;}
+#content2 > h3:before {content:""; background-color:#000; display:inline-block; width:10px; height:10px; border-radius:50px; margin:0 5px 0 0px; vertical-align: middle;}
+#content2 > img {width:950px; height:580px; margin:30px 0 0 0px;}
+#content2 > .sub_title{font-size:28px; margin:30px 0 0 40px; letter-spacing:-3px; color:#000;}
+#content2 > .sub_title:before {content:""; background-color:#000; display:inline-block; width:5px; height:5px; border-radius:50px; margin:0 5px 0 0px; vertical-align: middle;}
+#content2 > p {font-size:22px; margin:20px 0 0 50px; letter-spacing:-1px; line-height:35px; color:#323131;}
+
+#content3 {width:100%; height:970px; border-bottom:1px solid #adadad;}
+#content3 > h3 {font-size:32px; margin:80px 0 0 10px; letter-spacing:-2px;}
+#content3 > h3:before {content:""; background-color:#000; display:inline-block; width:10px; height:10px; border-radius:50px; margin:0 5px 0 0px; vertical-align: middle;}
+#content3 > p {font-size:20px; margin:30px 0 80px 30px; letter-spacing:-2px; line-height:30px; width:900px; height:150px; color:#323131;}
+#content3 > p:before {content:"-"; margin:0 5px 0 0px; }
+#content3 > h2 {font-size: 22px; letter-spacing:-2px; color:#323131;}
+#content3 > img {width: 100%; height: 500px; margin:80px 0 0 0px;}
+
+#recommend {width:1170px; height:460px; margin:40px auto;}
+#recommend > h3 {font-size:24px; margin:40px 0 30px 0px; float:left; font-weight: bold;}
+#recommend > #recommend_box {width:1170px; height:340px; float:left;}
+#recommend_box > .recommend_p {width: 210px; height: 340px; float:left; margin:0 30px 0 0px;}
+.recommend_p > .imgbox1 {width:210px; height: 210px; background-image:url("../img/recommend_p1.jpg"); background-size:cover; border-radius: 10px;}
+.recommend_p > .imgbox1 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
+.recommend_c {width:210px; height:120px; float:left; margin:10px 0 0 0px; }
+.recommend_c > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
+.recommend_c > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; letter-spacing: -2px;}
+.recommend_c > p {font-size:16px;  padding:0; width:100%; height:40px; letter-spacing: -2px; line-height: 20px; margin:5px 0 0 0px;}
+.recommend_c > #r_price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:5px 0 5px 0px;}
+.recommend_c > span {font-size:20px; margin:10px 0 0 0px;}
+.recommend_c > #won1 {font-size:14px; margin:0;}
+.recommend_c > #won1:after {content:"16%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
+
+.recommend_p > .imgbox2 {width:210px; height: 210px; background-image:url("../img/recommend_p2.jpg"); background-size:cover; border-radius: 10px;}
+.recommend_p > .imgbox2 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
+.recommend_c > #won2 {font-size:14px; margin:0;}
+.recommend_c > #won2:after {content:"34%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
+
+.recommend_p > .imgbox3 {width:210px; height: 210px; background-image:url("../img/recommend_p3.jpg"); background-size:cover; border-radius: 10px;}
+.recommend_p > .imgbox3 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
+.recommend_c > #won3 {font-size:14px; margin:0;}
+.recommend_c > #won3:after {content:"20%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
+
+.recommend_p > .imgbox4 {width:210px; height: 210px; background-image:url("../img/recommend_p4.jpg"); background-size:cover; border-radius: 10px;}
+.recommend_p > .imgbox4 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
+.recommend_c > #won4 {font-size:14px; margin:0;}
+.recommend_c > #won4:after {content:"25%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
+
+#recommend_box > .recommend_p2 {width: 210px; height: 340px;  float:left;}
+.recommend_p2 > .imgbox5 {width:210px; height: 210px; background-image:url("../img/recommend_p5.jpg"); background-size:cover; border-radius: 10px;}
+.recommend_p2 > .imgbox5 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
+.recommend_c2 {width:210px; height:120px; float:left; margin:10px 0 0 0px; }
+.recommend_c2 > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
+.recommend_c2 > h3 {font-size:16px; font-weight:bold;  padding:0 0 5px 0px; }
+.recommend_c2 > p {font-size:16px;  padding:0; width:100%; height:45px; letter-spacing: -1px; line-height: 20px; margin:0 0 5px 0px;}
+.recommend_c2 > span {font-size:20px; }
+.recommend_c2 > #won {font-size:14px; margin:0;}
