@@ -62,11 +62,8 @@
 #btn1 > button > img {width:25px; height:25px; float:center; padding:0; } 
 
 #s_nav {width:1170px; height:70px;background-color:#fafafa; border-top:1px solid #d6d6d6; margin:75px auto; } 
-#s_nav > nav {margin:0; padding:0;}
-input {display:none;}
-label {float:left; width:230px; height:70px; position:relative;}
-label:first-child { margin:0 0 0 10px;}
-label > span {font-size:17px; position:absolute; margin:25px 0 0 75px; color:#635447; font-weight:bold; } 
+#s_nav >nav > ul >li {float:left; width:230px; height:70px; text-align: center; padding:25px 0 0 0px; color:#635447; font-weight: bold;}
+#s_nav >nav > ul >li > span {font-size: 15px; margin:0 0 0 5px;}
 
 
 section {width:950px; height:4930px; margin:0 auto;}
@@ -107,6 +104,7 @@ section {width:950px; height:4930px; margin:0 auto;}
 #recommend > #recommend_box {width:1170px; height:340px; float:left;}
 #recommend_box > .recommend_p {width: 210px; height: 340px; float:left; margin:0 30px 0 0px;}
 .recommend_p > .imgbox1 {width:210px; height: 210px; background-image:url("../img/recommend_p1.jpg"); background-size:cover; border-radius: 10px;}
+#recommend_box > .recommend_p:hover {opacity:0.8; cursor: pointer;}
 .recommend_p > .imgbox1 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
 .recommend_c {width:210px; height:120px; float:left; margin:10px 0 0 0px; }
 .recommend_c > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
@@ -133,6 +131,7 @@ section {width:950px; height:4930px; margin:0 auto;}
 .recommend_c > #won4:after {content:"25%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
 
 #recommend_box > .recommend_p2 {width: 210px; height: 340px;  float:left;}
+#recommend_box > .recommend_p2:hover {opacity:0.8; cursor: pointer;}
 .recommend_p2 > .imgbox5 {width:210px; height: 210px; background-image:url("../img/recommend_p5.jpg"); background-size:cover; border-radius: 10px;}
 .recommend_p2 > .imgbox5 > .best {width:45px; height: 30px; background-color: #ff752a; font-size:12px; border-radius:10px 0px; text-align: center; padding:7px 0 0 0px; color:#fff;} 
 .recommend_c2 {width:210px; height:120px; float:left; margin:10px 0 0 0px; }

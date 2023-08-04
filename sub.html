@@ -28,13 +28,16 @@
             <a href="index.html" target="_self">
             <img src="img/logo.jpg" alt="logo"></a>
         </div>
-        <div id="search"></div>
+    <div id="search">
+        <input name="search" placeholder="검색어를 입력해 주세요" name="search">
+        </div>
+
         <div id="icon">
-            <img src="img/icon3.png">
+            <img src="img/icon3.png" alt="person_icon">
             <img src="img/icon2.png" alt="delivery">
             <img src="img/icon1.png" alt="bag">
         </div>
-        <nav>
+        <nav id="main_nav">
             <ul>
                 <li><a href="#"><img src="img/list.png" alt="nav_list">전체 카테고리</a></li>
                 <li>베스트</li>
@@ -175,24 +178,15 @@
 
     <div id="s_nav">
         <nav>
-          <label>
-            <input type="radio" name="tab" value="상품정보"><span>상품정보</span>
-          </label>  
-          <label>
-            <input type="radio" name="tab" value="구매정보"><span>구매정보</span>
-          </label>
-          <label>
-            <input type="radio" name="tab" value="상품후기"><span>상품후기192</span>
-          </label>
-          <label>
-            <input type="radio" name="tab" value="상품문의"><span>상품문의1</span>
-          </label>
-          <label>
-            <input type="radio" name="tab" value="배송/환불"><span>배송/환불</span>
-          </label>
-  
+            <ul>
+                <li>상품정보</li>
+                <li>구매정보</li>
+                <li>상품후기<span>192</span></li>
+                <li>상품문의<span>1</span></li>
+                <li>배송/환불</li>
+            </ul>
         </nav>
-      </div>
+    </div>
 
     <section>
         <div class="content1">
@@ -283,7 +277,7 @@
                     <div class="best">BEST</div>
                 </div>
                 <div class="recommend_c">
-                    <img src="himg/orga.png" alt="orga">
+                    <img src="img/orga.png" alt="orga">
                     <h3>올가</h3>
                     <p>[기획] 샤인머스켓 1송이(저탄소/GAP) (500g)</p>
                     <span id="r_price">19,800</span>
