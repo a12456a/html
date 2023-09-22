@@ -1,0 +1,21 @@
+[{
+"image" : "./img/P_p1.jpg",
+"title" : "행복한 닭이 낳은 동물복지 유정란 (10입)",
+"price" : "6,980",
+"salePrice" : "3,980"
+},{
+"image" : "./img/P_p2.jpg",
+"title" : "우리콩 생나또 99g (49.5gx2EA)",
+"price" : "3,800",
+"salePrice" : "1,900"
+},{
+"image" : "./img/P_p3.jpg",
+"title" : "올가 동물복지 목장우유 (900ml)",
+"price" : "5,500",
+"salePrice" : "2,900"
+},{
+"image" : "./img/P_p4.jpg",
+"title" : "멀티박 무항생제 한우 불고기 (200g)",
+"price" : "19,800",
+"salePrice" : "10,900"
+}]

@@ -1,0 +1,22 @@
+[{
+"image" : "./img/n_p1.jpg",
+"small_image" : "./img/n_small1.jpg",
+"brand" : "풀무원",
+"title" : "크로엣지피자 토마토&페퍼로니 (350g)",
+"salaPrice" : "6,980",
+"price" : "9,980"
+},{
+"image" : "./img/n_p2.jpg",
+"small_image" : "./img/n_small2.jpg",
+"brand" : "풀무원",
+"title" : "[식물성지구식단]결이다른 큐브강정 달콤소이 (430g)",
+"salaPrice" : "8,480",
+"price" : "9,980"
+},{
+"image" : "./img/n_p3.jpg",
+"small_image" : "./img/n_small3.jpg",
+"brand" : "아임리얼",
+"title" : "아임리얼 유기농사과 (700ml)",
+"salaPrice" : "9,980",
+"price" : "11,000"
+}]

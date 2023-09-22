@@ -1,0 +1,71 @@
+[{
+"image" : "./img/amio_p1.jpg",
+"brand" : "아미오",
+"title" : "건강을 담은 칠면조 육포 (50g)",
+"price" : "36,000",
+"salePrice" : "5,000",
+"review" : "(34)"
+},{
+"image" : "./img/amio_p2.jpg",
+"brand" : "아미오",
+"title" : "[반려견] 삼계탕 5개+두부황태탕 5개 (총 10개)",
+"price" : "36,000",
+"salePrice" : "25,200",
+"review" : "(28)"
+},{
+"image" : "./img/amio_p3.jpg",
+"brand" : "아미오",
+"title" : "헬씨믹스 트릿 피부&모질 (100g)",
+"price" : "36,000",
+"salePrice" : "5,000",
+"review" : "(15)"
+},{
+"image" : "./img/amio_p4.jpg",
+"brand" : "아미오",
+"title" : "건강담은간식 관절&뼈 (80g)",
+"price" : "36,000",
+"salePrice" : "5,000",
+"review" : "(87)"
+},{
+"image" : "./img/amio_p5.jpg",
+"brand" : "아미오",
+"title" : "[맛보기 사료] 자연담은식단 바르게기른닭 (40g)",
+"price" : "36,000",
+"salePrice" : "1,000",
+"review" : "(10)"
+},{
+"image" : "./img/amio_p6.jpg",
+"brand" : "아미오",
+"title" : "[맛보기 사료] 자연담은식단 바르게기른닭 (40g)",
+"price" : "36,000",
+"salePrice" : "1,000",
+"review" : "(12)"
+},{
+"image" : "./img/amio_p7.jpg",
+"brand" : "아미오",
+"title" : "칼슘 담은 닭가슴살 (50g)",
+"price" : "36,000",
+"salePrice" : "5,000",
+"review" : "(44)"
+},{
+"image" : "./img/amio_p8.jpg",
+"brand" : "아미오",
+"title" : "[맛보기 사료] 자연담은식단 캣 힘찬연어 (40g)",
+"price" : "36,000",
+"salePrice" : "1,000",
+"review" : "(5)"
+},{
+"image" : "./img/amio_p9.jpg",
+"brand" : "아미오",
+"title" : "유산균 담은 닭가슴살 (50g)",
+"price" : "36,000",
+"salePrice" : "5,000",
+"review" : "(39)"
+},{
+"image" : "./img/amio_p10.jpg",
+"brand" : "아미오",
+"title" : "건강한 덴탈껌 Green (100g)",
+"price" : "36,000",
+"salePrice" : "5,000",
+"review" : "(45)"
+}]
