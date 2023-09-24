@@ -13,20 +13,13 @@
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
   <script src="./js/mainjs.js"></script>
+  <script src="./js/slide.js"></script>
+  <script src="./js/nav.js"></script>
 </head>
 
 <body>
   <script>
-    function prev (){
-      $('.sliderWrap > li:last').appendTo('.sliderWrap');
-      $('.sliderWrap').css("margin-left","-1920px");
-      $('.sliderWrap').stop().animate({marginLeft : "0"},800);
-    }
-    $(function(){
-      $('.prev').click(function(){
-        prev();
-      });
-    });
+    
   </script>
   <header>
     <div id="login">
@@ -52,7 +45,26 @@
     </div>
     <nav id="main_nav">
       <ul>
-        <li><a href="sub.html" target="_self"><img src="img/list.png" alt="nav_list">전체 카테고리</a></li>
+        <li class="total_list"><a href="sub.html" target="_self"><img src="img/list.png" alt="nav_list">전체 카테고리</a>
+          <ul class="sub_nav">
+            <li class="gift"><a href="#">선물세트</a></li>
+            <li class="tofu"><a href="#">두부∙콩나물∙달걀</a></li>
+            <li class="fruit"><a href="#">과일∙채소∙쌀</a></li>
+            <li class="meat"><a href="#">정육∙달걀∙수산</a></li>
+            <li class="pizza"><a href="#">만두∙피자∙떡볶이</a></li>
+            <li class="rice"><a href="#">밥∙면∙간편식</a></li>
+            <li class="kimch"><a href="#">김치∙반찬∙국탕</a></li>
+            <li class="sauce"><a href="#">양념∙소스∙유지</a></li>
+            <li class="snack"><a href="#">간식∙차∙음료</a></li>
+            <li class="health"><a href="#">건강식품</a></li>
+            <li class="a_day"><a href="#">일일배달녹즙∙음료</a></li>
+            <li class="kids"><a href="#">이유식∙키즈</a></li>
+            <li class="design_meal"><a href="#">디자인밀 맞춤식단</a></li>
+            <li class="pet"><a href="#">생활∙주방∙반려용품</a></li>
+            <li class="kitchen"><a href="#">주방∙생활가전</a></li>
+            <li class="beauty"><a href="#">뷰티용품</a></li>
+          </ul>
+        </li>
         <li><a href="sub.html" target="_self">베스트</a></li>
         <li><a href="sub.html" target="_self">일일배송</a></li>
         <li><a href="sub.html" target="_self">매장배송</a></li>
@@ -83,32 +95,9 @@
         <h3>오늘만, e가격</h3>
         <img src="img/clock.png" alt="clock">
       </div>
-      <div class="today_p1">
-        <img src="img/today_p1.jpg" alt="today_p1">
-        <div class="p1_info">
-          <h5>[기획]동치미냉면2인+함흥비빔냉면2인 (1306g)</h5>
-          <p>#씨앗유산균으로 맑은 감칠맛 #고구마전분으로 만든 함흥면</p>
-          <span>6,980</span>
-          <span id="won">원</span>
-          <span id="price">9,000</span>
-          <div class="btn">
-            <img src="img/bag1.png" alt="bag">
-          </div>
-        </div>
-      </div>
-      <div class="today_p2">
-        <img src="img/today_p2.jpg" alt="today_p2">
-        <div class="p2_info">
-          <h5>ORGA 잔가시까지 제거한 품질인증 국산 순살 삼치 (300g)</h5>
-          <p>#가시 제거한 손질 삼치 #믿을 수 있는 국내산</p>
-          <span>9,700</span>
-          <span id="won">원</span>
-          <span id="price">13,900</span>
-          <div class="btn">
-            <img src="img/bag1.png" alt="bag">
-          </div>
-        </div>
-      </div>
+
+      <div class="today_p1 today_data"> </div>
+      <div class="today_p2 today_data"> </div>
     </div>
 
     <div id="priemium">
@@ -131,11 +120,22 @@
       </div>
 
       <div id="P_slider">
-        <ul class="slideWrap">
+        <ul class="P_sliderWrap">
           <li><img src="img/P_slider.jpg" alt="P_slider"></li>
-          <li><img src="img/P_slider.jpg" alt="P_slider"></li>
-          <li><img src="img/P_slider.jpg" alt="P_slider"></li>
+          <li><img src="img/P_slider2.jpg" alt="P_slider2"></li>
+          <li><img src="img/P_slider3.jpg" alt="P_slider3"></li>
         </ul>
+
+        <div class="spotwrap">
+          <div class="spot active-spot"></div>
+          <div class="spot"></div>
+          <div class="spot"></div>
+        </div>
+
+        <div class="slide_button">
+          <button class="prev P_prev">&lt;</button>
+          <button class="next P_next">&gt;</button>
+        </div>
       </div>
 
       <div id="P_product">
@@ -212,15 +212,8 @@
 
     <div id="pick">
       <h3>골라담아 ,묶음할인 ></h3>
-      <div class="box">
-        <a href="#">
-          <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/03/15/D5F1F6D0DAF94143A95F.jpg" alt="pick1"> </a>
-      </div>
-
-      <div class="box">
-        <a href="#">
-          <img src="https://shoppulmuone.cdn.ntruss.com/BOS/dp/2023/03/15/6CF6CE8A283745F1AFDF.jpg" alt="pick2"> </a>
-      </div>
+      <div class="box"> </div>
+      <div class="box"> </div>
     </div>
 
 

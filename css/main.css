@@ -183,10 +183,22 @@
       #mark > h5 {font-size:15px; font-weight:bold; float:left; width:250px; height:20px; margin:0 0 5px 0px; padding:0; color:#eee;}
       #mark > p {font-size:15px; float:left; width:280px; height:25px;  margin:0; padding:0; color:#eee;} 
       
-      #P_slider > img {width:600px; height:270px; float:left; margin:100px 0 0 0px; border-radius:20px;}
+      #P_slider {width:600px; height:270px; float:left; position: relative; margin:100px 0 0 0px; overflow: hidden; border-radius:20px;}
+      #P_slider > .P_sliderWrap {width: 1800px; height:270px;}
+      #P_slider > .P_sliderWrap > li {width:600px; height: 270px; float: left;}
+      #P_slider > .P_sliderWrap > li > img {width:100%; height: 100%;}
+      #P_slider > .slide_button {right:0; top:110px; width:600px; height: 100%; display: flex; justify-content: space-between; opacity: 0;}
+      #P_slider > .slide_button > button {width:50px; height: 55px; padding-top:5px;}
+      #P_slider > .slide_button > .prev {border-radius: 0 10px 10px 0; }
+      #P_slider > .slide_button > .next {border-radius: 10px 0 0 10px; }
+      #P_slider > .slide_button:hover {opacity: 1;}
+      .spotwrap {width:40px; height: 20px; display: flex; justify-content: space-between; top:250px; left: 280px; position: absolute;}
+      .spotwrap > .spot {width:8px; height: 8px; opacity: 0.7; border-radius: 50px; background-color: #ddd;}
+      .spotwrap > .active-spot {background-color: #fff; opacity: 1;}
 
       #P_product  {width:950px; height:340px; float:left; margin:40px 0 0 110px;}
       #P_p1 {width:220px; height:340px; float:left; border-radius:10px; margin:0 20px 0 0px;}
+      #P_p1:hover {opacity:0.8; cursor: pointer;}
       #P_p1 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
       .P_img > img {width:100%; height:100%;}
       .P_content {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
@@ -199,14 +211,17 @@
       .P_content > .btn > img {width:70%; height:70%; margin:5px 0 0 5px;}
 
       #P_p2 {width:220px; height:340px; float:left; border-radius:10px; margin:0 20px 0 0px;}
+      #P_p2:hover {opacity:0.8; cursor: pointer;}
       #P_p2 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
       #P_p2 > .P_content > #won:after {content:"50%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
 
       #P_p3 {width:220px; height:340px; float:left; border-radius:10px; margin:0 20px 0 0px;}
+      #P_p3:hover {opacity:0.8; cursor: pointer;}
       #P_p3 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
       #P_p3 > .P_content > #won:after {content:"47%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
 
       #P_p4 {width:220px; height:340px; float:left; border-radius:10px; margin:0;}
+      #P_p4:hover {opacity:0.8; cursor: pointer;}
       #P_p4 > .P_img {width:210px; height:210px; float:left; margin:0 5px 0 5px; overflow:hidden; border-radius:10px;}
       #P_p4 > .P_content > #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
       
@@ -243,21 +258,21 @@
          #best > #b_main> h3 {font-size: 28px; margin:20px 10px 30px 10px; letter-spacing:-3px;}
          #best > #b_main>ul {margin:0px; padding:0 0 0 10px;}
          #best > #b_main> ul > li > a {text-decoration:none; color:#000; float:left; text-align:center; background-color:white; padding:10px 20px; border-radius:10px; margin:0 5px 5px 0px; font-size:14px; border:1px solid #eee; letter-spacing:-1px;}
-         #best > #b_main> ul > li > a:hover {background-color:#004f18;}
+         #best > #b_main> ul > li > a:hover {background-color:#004f18; color:#fff;}
 
          #b_p1 {width:230px; height:430px; float:left;}
          #b_p1:hover {opacity:0.8; cursor: pointer;}
          #b_p1 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
       .b_img > .best {width:45px; height:45px; background-color:#ff752a; border-radius:10px 0 10px 0px; text-align:center; color:white; position:absolute; float:left; top:0; left:0; padding:5px; font-size:14px; line-height: 16px;}
       .b_img > img {width:100%; height:100%;}
-      .b_con {width:205px; height:160px; float:left; margin:10px 0 0 10px;}
-      .b_con > img {width:20px; height:20px; float:left; margin:0 5px 0 0px;}
-      .b_con > h3 {font-size:15px; font-weight:bold;  padding:0 0 5px 0px; }
+      .b_con {width:205px; height:160px; float:left; margin:10px 0 0 10px; }
+      .b_con > img {width:20px; height:20px; float:left; margin:0 5px 0 0px; vertical-align: middle;}
+      .b_con > h3 {font-size:15px; font-weight:bold;  padding:3px 0 5px 0px; }
       .b_con > p {font-size:14px; margin:5px 0 0 0px; padding:0; width:100%; height:45px; letter-spacing: -2px; line-height:25px; color:#666; }
       .b_con > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 5px 0px;}
       .b_con > span {font-size:20px; margin:10px 0 0 0px;}
       .b_con > #won {font-size:14px; margin:0;}
-      .b_con> #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
+      .b_con > #won:after {content:"44%"; color:#ff752a; font-size:20px; margin:0 0 0 5px;}
       .b_con > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin:0 10px 0 0px; }
       .b_con > .btn > img {width:70%; height:70%; margin:5px 0 0 5px;}
       .b_con >#star {width:150px; height:20px; display:inline-block; margin:5px 0 0 0px;} 
@@ -265,15 +280,19 @@
       .b_con >#star > span {color:#c2c2c2;}
 
 #b_p2 {width:230px; height:430px; float:left;}
+#b_p2 > .b_con > #won:after {content:"50%";}
 #b_p2:hover {opacity:0.8; cursor: pointer;}
 #b_p2 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p3 {width:230px; height:430px; float:left;}
+#b_p3 > .b_con > #won:after {content:"32%";}
 #b_p3:hover {opacity:0.8; cursor: pointer;}
 #b_p3 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p4 {width:230px; height:430px; float:left;}
+#b_p4 > .b_con > #won:after {content:"47%";}
 #b_p4:hover {opacity:0.8; cursor: pointer;}
 #b_p4 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p5 {width:230px; height:430px; float:left;}
+#b_p5 > .b_con > #won:after {content:"44%";}
 #b_p5:hover {opacity:0.8; cursor: pointer;}
 #b_p5 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p6 {width:230px; height:430px; float:left;}
@@ -282,21 +301,26 @@
 #b_p6 > .b_con > #price {opacity:0;}
 #b_p6 > .b_con> #won:after {display:none;}
 #b_p7 {width:230px; height:430px; float:left;}
+#b_p7 > .b_con > #won:after {content:"28%";}
 #b_p7:hover {opacity:0.8; cursor: pointer;}
 #b_p7 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p8 {width:230px; height:430px; float:left;}
+#b_p8 > .b_con > #won:after {content:"50%";}
 #b_p8:hover {opacity:0.8; cursor: pointer;}
 #b_p8 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p9 {width:230px; height:430px; float:left;}
+#b_p9 > .b_con > #won:after {content:"51%";}
 #b_p9:hover {opacity:0.8; cursor: pointer;}
 #b_p9 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 #b_p10 {width:230px; height:430px; float:left;}
+#b_p10 > .b_con > #won:after {content:"30%";}
 #b_p10:hover {opacity:0.8; cursor: pointer;}
 #b_p10 > .b_img {width:210px; height:210px; position:relative; float:left; border-radius:10px; margin:15px 0 0 10px; overflow:hidden;}
 
       #new {width: 1170px; height: 460px; margin: 0 0 60px 375px;}
       #new > h3 {font-size: 28px; margin: 0 0 25px 0px; letter-spacing: -2px;}
       .n_p1 {width:370px; height:375px; float:left; margin:0 30px 0 0px; }
+      .n_p1:hover {opacity:0.8; cursor: pointer;}
       .n_p1 > img {width:100%; height:230px; border-radius:10px;}
       .n_p1 > .n_img {width:135px; height:135px; position:relative;  overflow:hidden; float:left; border-radius: 10px; margin:5px 10px 0 0px;}
       .n_img > .best {width:45px; height:30px; background-color:#ff752a; position:absolute; border-radius:10px 0 10px 0px;  font-size:12px;  text-align:center; font-weight:bold; color:#fff; padding:7px 0 0 0px;}
@@ -307,12 +331,13 @@
       .n_c1 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 10px 5px;}
       .n_c1 > span {font-size:20px; margin:10px 0 0 0px;}
       .n_c1 > #won {font-size:14px; margin:0;}
-      .n_c1 > #won:after {content:"30%"; color:#ff752a; font-size:20px; margin-left:5px;}
+      .n_p1 > .afterwon > #won:after {content:"30%"; color:#ff752a; font-size:20px; margin-left:5px;}
       .n_c1 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
       .n_c1 > .btn > img {width:70%; height:70%; margin:5px 0 0 5px;}
 
 
       .n_p2 {width:370px; height:375px; float:left; margin:0 30px 0 0px; }
+      .n_p2:hover {opacity:0.8; cursor: pointer;}
       .n_p2 > img {width:100%; height:230px; border-radius:20px;}
       .n_p2 > .n_img {width:135px; height:135px; position:relative;  overflow:hidden; float:left; margin:5px 10px 0 0px; border-radius: 10px;}
       .n_p2 > .n_img > img {width:100%; height:100%;}
@@ -322,11 +347,12 @@
       .n_c2 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 10px 5px;}
       .n_c2 > span {font-size:20px; margin:10px 0 0 0px;}
       .n_c2 > #won {font-size:14px; margin:0 }
-      .n_c2 > #won:after {content:"15%"; color:#ff752a; font-size:20px; margin-left:5px;}
+      .n_p2 > .afterwon > #won:after {content:"15%"; color:#ff752a; font-size:20px; margin-left:5px;}
       .n_c2 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
       .n_c2 > .btn > img {width:70%; height:70%; margin:5px 0 0 5px;}
 
       .n_p3 {width:370px; height:375px; float:left;}
+      .n_p3:hover {opacity:0.8; cursor: pointer;}
       .n_p3 > img {width:100%; height:230px; border-radius:20px;}
       .n_p3 > .n_img {width:135px; height:135px; position:relative;  overflow:hidden; float:left; margin:5px 10px 0 0px; border-radius: 10px;}
       .n_p3 > .n_img > img {width:100%; height:100%;}
@@ -336,7 +362,7 @@
       .n_c3 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 10px 5px;}
       .n_c3 > span {font-size:20px; margin:10px 0 0 0px;}
       .n_c3 > #won {font-size:14px; margin:0 }
-      .n_c3 > #won:after {content:"9%"; color:#ff752a; font-size:20px; margin-left:5px;}
+      .n_p3 > .afterwon > #won:after {content:"9%"; color:#ff752a; font-size:20px; margin-left:5px;}
       .n_c3 > .btn {width:35px; height:35px; float:right; background-color:#80c342; border-radius:100px; margin-top:-10px; margin-right:20px;}
       .n_c3 > .btn > img {width:70%; height:70%; margin:5px 0 0 5px;}
 
@@ -378,6 +404,7 @@
       #r_main > .s_left {width:270px; height:875px; float:left; margin:0 30px 0 0px;}
       #r_main > .s_left > .r_p1 {width:270px; height:420px; border:2px solid #f7f7f7; background-color:#f7f7f7; float:left; margin:0 0 30px 0px; border-radius:20px; overflow:hidden;}
       .r_p1 > img {width:100%; height:270px;}
+      .r_p1:hover {opacity:0.8; cursor: pointer;}
       .r_p1 > h3 {font-size:16px; font-weight:bold; margin:10px 0 10px 10px; padding:0; letter-spacing: -1px;}
       .r_p1 > p {font-size:15px; margin:0 0 40px 10px; padding:0; letter-spacing: -1px; line-height:17px; }
       .r_p1 > span {font-size:20px; margin:20px 0 0 10px;}
@@ -387,6 +414,7 @@
 
       #r_main > .s_left > .r_p2 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left;  border-radius:20px; overflow:hidden;}
       .r_p2 > img {width:100%; height:270px;}
+      .r_p2:hover {opacity:0.8; cursor: pointer;}
       .r_p2 > h3 {font-size:16px; font-weight:bold; margin:10px 0 10px 10px; padding:0; letter-spacing: -1px;}
       .r_p2 > p {font-size:15px; margin:0 0 30px 10px; padding:0; letter-spacing: -1px; line-height:17px;}
       .r_p2 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 10px 10px;}
@@ -399,6 +427,7 @@
 
       #r_main > .r_p3 {width:570px; height:870px;  border:1px solid #f7f7f7; background-color:#f7f7f7;  float:left;  margin:0 30px 0 0px; border-radius:20px; overflow:hidden;}
       .r_p3 > img {width:100%; height:650px;}
+      .r_p3:hover {opacity:0.8; cursor: pointer;}
       .r_p3 > h3 {font-size:18px; font-weight:bold; margin:25px 0 0 25px; padding:0; letter-spacing: -1px;}
       .r_p3 > p {font-size:20px; margin:10px 0 60px 25px; padding:0; letter-spacing: -1px; line-height:17px;}
       .r_p3 > #price {font-size:16px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 15px 25px;}
@@ -412,6 +441,7 @@
       #r_main > .s_right {width:270px; height:875px;  float:left;}
       #r_main > .s_right > .r_p4 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left; margin:0 0 30px 0px;  border-radius:20px; overflow:hidden;}
       .r_p4 > img {width:100%; height:270px;}
+      .r_p4:hover {opacity:0.8; cursor: pointer;}
       .r_p4 > h3 {font-size:16px; font-weight:bold; margin:10px 0 10px 10px; padding:0; letter-spacing: -1px;}
       .r_p4 > p {font-size:15px; margin:0 0 30px 10px; padding:0; letter-spacing: -1px; line-height:17px;}
       .r_p4 > #price {font-size:14px; display:block; text-decoration:line-through; color:#c2c2c2; margin:0 0 10px 10px;}
@@ -423,6 +453,7 @@
 
       #r_main > .s_right > .r_p5 {width:270px; height:420px; border:1px solid #f7f7f7; background-color:#f7f7f7; float:left;  border-radius:20px; overflow:hidden;}
       .r_p5 > img {width:100%; height:270px;}
+      .r_p5:hover {opacity:0.8; cursor: pointer;}
       .r_p5 > h3 {font-size:16px; font-weight:bold; margin:10px 0 10px 10px; padding:0; letter-spacing: -1px;}
       .r_p5 > p {font-size:15px; margin:0 0 40px 10px; padding:0; letter-spacing: -1px; line-height:17px;}
       .r_p5 > span {font-size:20px; margin:20px 0 0 10px;}
@@ -438,6 +469,7 @@
       #button {width:40px; height:40px; background-color:#ffffff; border:1px solid #ebebeb; text-align:center; font-size:25px; padding:0 5px 0 0px; margin:15px 0 0 0px; float:left; border-radius:10px;}
       .b_box {width:155px; height:75px; float:left;}
       .b_box > img {width:100%; height:100%;}
+      .b_box:hover {opacity:0.8; cursor: pointer;}
 
       #main_img {width:1170px; height:240px; margin:20px 0px; border-radius:20px;}
 
@@ -507,6 +539,7 @@
       #B_p10 > .B_content > #price {opacity:0;}
 
       #more_button {width:180px; height:50px; border-radius:40px; border:1px solid #e2e2e2; text-align:center; padding:15px 0 0 0px; margin:20px 0 0 495px;}
+      #more_button:hover {cursor: pointer;}
 
         
     

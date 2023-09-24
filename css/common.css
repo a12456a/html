@@ -88,6 +88,7 @@
             height: 70px;
             float: left;
             margin: 20px 0 0 375px;
+            position: relative;
         }
 
         #main_nav>ul {
@@ -105,7 +106,6 @@
         
 
         #main_nav>ul>li {float: left; margin: 10px 30px 0 0px; }
-        #main_nav>ul>li:first-child {margin: 10px 60px 0 0px;}
 
         #main_nav>ul>li>a {
             text-decoration: none;
@@ -116,6 +116,28 @@
         #main_nav>ul>li>a:hover {
             color: #666;
         }
+        .sub_nav {border: 2px solid #ddd; position: absolute; left: 0; border-top: none; width:200px; z-index: 100; background-color: #fff; border-radius: 0 0 0 10px; margin-top: 38px;}
+        .sub_nav > li {padding: 20px 0 0 20px;}
+        .sub_nav > li:last-child {padding-bottom: 20px;}
+        .sub_nav > li > a{text-decoration: none; font-size: 14px; color:#828282; line-height: 10px;}
+        .sub_nav > li::before {content: ""; display: inline-block; width: 24px; height: 24px; vertical-align: middle; margin-right: 6px; background-size: 100% 100%; }
+        .sub_nav li.gift::before {background-image: url("../img/5403-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.tofu::before {background-image: url("../img/4889-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.fruit::before {background-image: url("../img/4946-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.meat::before {background-image: url("../img/4972-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.pizza::before {background-image: url("../img/4890-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.rice::before {background-image: url("../img/4895-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.kimch::before {background-image: url("../img/4882-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.sauce::before {background-image: url("../img/5061-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.snack::before {background-image: url("../img/5029-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.health::before {background-image: url("../img/5090-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.a_day::before {background-image: url("../img/5118-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.kids::before {background-image: url("../img/5150-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.design_meal::before {background-image: url("../img/5170-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.pet::before {background-image: url("../img/5188-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.kitchen::before {background-image: url("../img/5418-category-icon.svg"); background-repeat: no-repeat;}
+        .sub_nav li.beauty::before {background-image: url("../img/5228-category-icon.svg"); background-repeat: no-repeat;}
+
 
         
 

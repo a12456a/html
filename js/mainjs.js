@@ -1,3 +1,36 @@
+/**오늘만, e 가격**/
+$(function(){
+  $.ajax({
+    url : "./js/today.json",
+    dataType : "json",
+    success : function(data){
+      for (let i=0; i<data.length; i++){
+        let product = data[i];
+        let image = product["image"];
+        let title = product["title"];
+        let subtitle = product["subtitle"];
+        let price = product["price"];
+        let salePrice = product["salePrice"];
+
+        let temp_html = `<img src="${image}" alt="today_p1">
+        <div class="p1_info">
+          <h5>${title}</h5>
+          <p>${subtitle}</p>
+          <span>${salePrice}</span>
+          <span id="won">원</span>
+          <span id="price">${price}</span>
+          <div class="btn">
+            <img src="img/bag1.png" alt="bag">
+          </div>
+        </div>`;
+        $(".today_data").eq(i).append(temp_html);
+      }
+    }
+  });
+});
+
+
+
 /**프리미엄 식품관**/
     $(function(){
       $.ajax({
@@ -98,7 +131,7 @@
                               <div class="best">BEST</div>
   <img src="${small_image}" alt="new_small1">
 </div>
-<div class="n_c1">
+<div class="n_c1 afterwon">
   <h3>${brand}</h3>
   <p>${title}</p>
   <span id="price">${price}</span>
@@ -113,6 +146,26 @@ $('.data2').eq(i).append(temp_html);
         }
       });
     });
+
+    /**골라담아 묶음할인**/
+    $(function(){
+      $.ajax({
+        url :"./js/pick.json",
+        dataType : "json",
+        success : function(data){
+          for(let i=0; i<data.length; i++){
+            let product = data[i];
+            let image = product["image"];
+
+            let temp_html =`<a href="#">
+            <img src="${image}" alt="pick1"> </a>`;
+
+            $('.box').eq(i).append(temp_html);
+          }
+        }
+      });
+    });
+
 
     /**요즘, 많이 찾는 상품**/
     $(function(){
